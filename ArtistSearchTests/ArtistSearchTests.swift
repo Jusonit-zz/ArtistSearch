@@ -10,7 +10,7 @@ import XCTest
 
 class ArtistSearchTests: XCTestCase {
     
-    var sut: Response?
+    var sut: SearchResponse?
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,7 +18,7 @@ class ArtistSearchTests: XCTestCase {
         if let path = testBundle.path(forResource: "mockData", ofType: "json") {
             if let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped) {
                 let decoder = JSONDecoder()
-                let jResponse = try? decoder.decode(Response.self, from: jsonData)
+                let jResponse = try? decoder.decode(SearchResponse.self, from: jsonData)
                 sut = jResponse
             }
         }
@@ -33,25 +33,12 @@ class ArtistSearchTests: XCTestCase {
     func test_DecodeModelFromMockData() {
         guard let sut = sut else {return}
         let artistsArray = sut.results
-        XCTAssertEqual(artistsArray.count, 1, "Artists array should contain 1 entry")
+        XCTAssertEqual(artistsArray?.count, 1, "Artists array should contain 1 entry")
     }
     
     func test_ArtistArrayContainsResultCount() {
         guard let sut = sut else {return}
-        let num = sut.resultCount
+        let num = sut.resultCount ?? 0
         XCTAssertGreaterThanOrEqual(num, 1)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

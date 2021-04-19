@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SongCollectionViewCell" id="gTV-IL-0wX" customClass="SongCollectionViewCell" customModule="ArtistSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="361"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="361"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-jz-XqM" userLabel="primaryGenreName">
+                        <rect key="frame" x="108.5" y="195" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="12S-5e-c6D"/>
+                            <constraint firstAttribute="width" constant="200" id="1Ug-Fo-jVJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1x-JO-KpG" userLabel="trackName">
+                        <rect key="frame" x="108.5" y="105" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="AzG-Xu-s0q"/>
+                            <constraint firstAttribute="width" constant="200" id="qg8-2Q-bIu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgG-Rp-btp" userLabel="releaseDate">
+                        <rect key="frame" x="108.5" y="150" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="097-cO-ZM6"/>
+                            <constraint firstAttribute="width" constant="200" id="FDq-Wb-k2U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-dK-rIG" userLabel="trackPrice">
+                        <rect key="frame" x="108.5" y="240" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="alh-dg-YX8"/>
+                            <constraint firstAttribute="width" constant="200" id="ici-E0-GQJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciK-O1-dYF" userLabel="artistName">
+                        <rect key="frame" x="58.5" y="50" width="300" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="Hdb-9q-RXK"/>
+                            <constraint firstAttribute="height" constant="25" id="aDe-xE-LR3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qph-u3-ArN">
+                        <rect key="frame" x="0.0" y="328" width="417" height="33"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="do2-VI-gPG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mtQ-jz-XqM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2fE-J2-vAe"/>
+                <constraint firstItem="mtQ-jz-XqM" firstAttribute="top" secondItem="LgG-Rp-btp" secondAttribute="bottom" constant="20" id="6Tg-7S-rkJ"/>
+                <constraint firstItem="ciK-O1-dYF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="50" id="ADe-VL-1nl"/>
+                <constraint firstItem="LgG-Rp-btp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="JkE-Jh-1pc"/>
+                <constraint firstAttribute="bottom" secondItem="qph-u3-ArN" secondAttribute="bottom" id="LDG-sM-Can"/>
+                <constraint firstItem="a4h-dK-rIG" firstAttribute="top" secondItem="mtQ-jz-XqM" secondAttribute="bottom" constant="20" id="PCP-9Y-2oz"/>
+                <constraint firstAttribute="trailing" secondItem="qph-u3-ArN" secondAttribute="trailing" id="QGw-2a-Mgx"/>
+                <constraint firstItem="q1x-JO-KpG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="SAO-pp-NGX"/>
+                <constraint firstItem="ciK-O1-dYF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VfP-O3-4eQ"/>
+                <constraint firstItem="qph-u3-ArN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="blJ-Ud-rdM"/>
+                <constraint firstItem="q1x-JO-KpG" firstAttribute="top" secondItem="ciK-O1-dYF" secondAttribute="bottom" constant="30" id="cCx-5I-fde"/>
+                <constraint firstItem="LgG-Rp-btp" firstAttribute="top" secondItem="q1x-JO-KpG" secondAttribute="bottom" constant="20" id="hT9-PX-QVe"/>
+                <constraint firstItem="qph-u3-ArN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="loZ-Vn-h3M"/>
+                <constraint firstItem="a4h-dK-rIG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qyM-KV-Zlb"/>
+            </constraints>
+            <size key="customSize" width="417" height="361"/>
+            <connections>
+                <outlet property="artistName" destination="ciK-O1-dYF" id="Zng-fc-H64"/>
+                <outlet property="primaryGenreName" destination="mtQ-jz-XqM" id="3l7-nZ-TH7"/>
+                <outlet property="releaseDate" destination="LgG-Rp-btp" id="sb4-Os-Dms"/>
+                <outlet property="trackName" destination="q1x-JO-KpG" id="fY5-rX-XUi"/>
+                <outlet property="trackPrice" destination="a4h-dK-rIG" id="U9s-iG-7rg"/>
+            </connections>
+            <point key="canvasLocation" x="212.31884057971016" y="96.763392857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
