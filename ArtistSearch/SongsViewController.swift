@@ -47,11 +47,11 @@ extension SongsViewController: UICollectionViewDelegateFlowLayout {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SongCollectionViewCell.reuseIdentifier, for: indexPath) as? SongCollectionViewCell,
-              let songDetails = songsViewModel.searchResponse.results?[indexPath.row]
+              var songDetails = songsViewModel.searchResponse.results?[indexPath.row]
         else {
             return UICollectionViewCell()
         }
-  
+        songDetails.releaseDate = dateFormat.shared.dateFormatter(date: songDetails.releaseDate!)
         let viewModel = CellViewModel(songDetails)
         cell.configure(viewModel: viewModel)
         return cell

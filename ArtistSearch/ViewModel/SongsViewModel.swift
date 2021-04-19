@@ -31,6 +31,7 @@ final class SongsViewModel {
                 DispatchQueue.main.async {
                     self.searchResponse = response
                     self.updateUI?()
+
                 }
             case .failure(let err):
                 print(err)
@@ -38,9 +39,13 @@ final class SongsViewModel {
             }
         }
     }
+}
     
-    // Todo: make dateFormatter global singleton
-    private func dateFormatter(date: String) -> String {
+//Singleton date formatter
+class dateFormat {
+    static let shared = dateFormat()
+    private init() {}
+    func dateFormatter(date: String) -> String {
         let dateFormatterGet = DateFormatter()
         let dateFormatterPrint = DateFormatter()
 
@@ -55,3 +60,4 @@ final class SongsViewModel {
         return formattedDate
     }
 }
+
