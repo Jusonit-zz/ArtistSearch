@@ -23,6 +23,7 @@
 		C9132A13262C1946003BB6BA /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9132A12262C1946003BB6BA /* CollectionView.swift */; };
 		C9132A19262C195E003BB6BA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9132A17262C195E003BB6BA /* CollectionViewCell.swift */; };
 		C9132A1A262C195E003BB6BA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9132A18262C195E003BB6BA /* CollectionViewCell.xib */; };
+		C9C20AE9262D67A000B21636 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C20AE8262D67A000B21636 /* mockData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C9132A12262C1946003BB6BA /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		C9132A17262C195E003BB6BA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C9132A18262C195E003BB6BA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		C9C20AE8262D67A000B21636 /* mockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C9132996262BD856003BB6BA /* ArtistSearchTests.swift */,
+				C9C20AE8262D67A000B21636 /* mockData.json */,
 				C9132998262BD856003BB6BA /* Info.plist */,
 			);
 			path = ArtistSearchTests;
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C20AE9262D67A000B21636 /* mockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

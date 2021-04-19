@@ -61,6 +61,7 @@
                     <navigationItem key="navigationItem" id="x2v-kf-wEz"/>
                     <connections>
                         <outlet property="artistSearchBar" destination="tP3-ML-DTT" id="sG0-iS-3fE"/>
+                        <outlet property="searchButtonOutlet" destination="N4P-AE-qrK" id="4e0-gV-WTK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -99,7 +100,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7f-Ge-ZSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="45"/>
+            <point key="canvasLocation" x="1802.8985507246377" y="44.866071428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="um7-gH-aJL">

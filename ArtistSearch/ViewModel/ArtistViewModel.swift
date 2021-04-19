@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 final class ArtistViewModel {
     
@@ -13,13 +14,16 @@ final class ArtistViewModel {
     
     var artistName: String = ""{
         didSet {
-            getData(artistName: artistName)
+            getData(artistName: artistName, indicator: indicator)
         }
     }
     
-    init(artistName: String) {
+    var indicator = UIActivityIndicatorView()
+    
+    init(artistName: String, indicator: UIActivityIndicatorView) {
         if(artistName == "") { return }
-        getData(artistName: artistName)
+        
+        getData(artistName: artistName, indicator: indicator)
     }
     
     func dateFormatter(date: String) -> String {
@@ -39,9 +43,14 @@ final class ArtistViewModel {
     }
     
     
-    private func getData(artistName: String) {
+    private func getData(artistName: String, indicator: UIActivityIndicatorView) {
+        indicator.hidesWhenStopped = true
+        indicator.startAnimating()
+        indicator.isHidden = false
         let urlString = API.getURLFor(artistName: artistName)
         getDataInternal(artistName: artistName, for: urlString)
+        indicator.stopAnimating()
+        indicator.isHidden = true
     }
     
     private func getDataInternal(artistName: String, for urlString: String) {

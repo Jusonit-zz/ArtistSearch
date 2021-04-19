@@ -10,11 +10,11 @@ import UIKit
 
 class CollectionView: UICollectionViewController {
     
-    var data = ArtistViewModel(artistName: "")
+    var data = ArtistViewModel(artistName: "", indicator: UIActivityIndicatorView())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Register cell classes
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView?.register(UINib(nibName: CollectionViewCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
@@ -22,7 +22,7 @@ class CollectionView: UICollectionViewController {
         if let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = UICollectionView.ScrollDirection.vertical
         }
-
+        
         // Do any additional setup after loading the view.
     }
 }
@@ -38,7 +38,7 @@ extension CollectionView: UICollectionViewDelegateFlowLayout {
             return UICollectionViewCell()
         }
         
-        let artistName = data.artistName
+        let artistName = data.artistData.results[indexPath.row].artistName
         let trackName = data.artistData.results[indexPath.row].trackName
         
         var releaseDate = data.artistData.results[indexPath.row].releaseDate
